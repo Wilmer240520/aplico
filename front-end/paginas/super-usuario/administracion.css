@@ -1,0 +1,22 @@
+.form{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form h3{
+    color: #466CD9;
+}
+
+#enviar{
+    background-color: #466CD9;
+    color: #ffffff;
+}
+
+.trTable{
+    align-items: center;
+}
+
+.tdTable{
+    line-height: 100px;
+}

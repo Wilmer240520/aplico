@@ -1,0 +1,23 @@
+.form{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form h3{
+    color: #466CD9;
+}
+
+#enviar{
+    background-color: #466CD9;
+    color: #ffffff;
+}
+
+.trabajo{
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    box-shadow: 2px 3px 4px 5px 6px #999;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-right: 5%;
+}

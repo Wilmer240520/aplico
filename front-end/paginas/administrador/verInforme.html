@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>pdf</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/2f865bf39b.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-html2pdf@1.1.4/lib/html2pdf.min.js"></script>
+
+    <!-- Custom styles for this template-->
+    <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="verInforme.css">
+
+</head>
+
+<body id="page-top">
+    <div class="container pdf">
+        <div class="container">
+            <div class="titulo">
+                <div>
+                    <h1>Reporte de trabajos</h1>
+                </div>
+                <img src="../../img/imagenes/logo-con-color.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="seccion">Datos del supervisor</div>
+            <table class="datosusuarios tabla">
+                <tbody>
+                    <tr>
+                        <td>Cédula: <span id="cedula"></span></td>
+                        <td>Género: <span id="genero"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Nombres: <span id="nombre"></span></td>
+                        <td>Apellidos: <span id="apellido"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Correo: <span id="correo"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr>
+        </div>
+        
+        <br>
+        <div class="container">
+            <div class="seccion">Datos del trabajo</div>
+            <table class="datostrabajo tabla">
+                <tbody>
+                    <tr>
+                        <td>fecha: <span id="fecha"></span> </td>
+                        <td>Ubicación: <span id="ubicacion"></span></td>
+                        <td>Estado: <span id="estado"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Código libre: <span id="codigo"></span></td>
+                        <td>Tipo de trabajo: <span id="tipo"></span></td>
+                        <td>Código de trabajo: <span id="codigot"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="seccion">Datos de la sección 1</div>
+            <table class="datostrabajo1 tabla">
+                <tbody>
+                    <tr>
+                        <td>fecha: <span id="fecha1"></span></td>
+                        <td>Equipo: <span id="equipo1"></span></td>
+                        <td>Sección: <span id="seccion1"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Humedad relativa: <span id="humedad1"></span></td>
+                        <td>Temperatura ambiental: <span id="ambiental1"></span></td>
+                        <td>Temperatura Placa: <span id="placa1"></span></td>
+                    </tr>
+                    <tr>
+                        <td>PuntoRocio: <span id="punto1"></span></td>
+                        <td>Rugosidad: <span id="rugosidad1"></span></td>
+                        <td>Aplica: <span id="aplica1"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Calculo: <span id="calculo1"></span></td>
+                        <td>Espesor: <span id="espesor1"></span></td>
+                        <td>Observación: <span id="observacion1"></span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="" alt="imagen.jpg" id="imagen1"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="seccion">Datos de la sección 2</div>
+            <table class="datostrabajo2 tabla">
+                <tbody>
+                    <tr>
+                        <td>fecha: <span id="fecha2"></span></td>
+                        <td>Equipo: <span id="equipo2"></span></td>
+                        <td>Sección: <span id="seccion2"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Humedad relativa: <span id="humedad2"></span></td>
+                        <td>Temperatura ambiental: <span id="ambiental2"></span></td>
+                        <td>Temperatura Placa: <span id="placa2"></span></td>
+                    </tr>
+                    <tr>
+                        <td>PuntoRocio: <span id="punto2"></span></td>
+                        <td>Aplica: <span id="aplica2"></span></td>
+                        <td>Calculo: <span id="calculo2"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Espesor: <span id="espesor2"></span></td>
+                        <td>Observación: <span id="observacion2"></span></td>
+                        <td><img src="" alt="imagen.jpg" id="imagen2"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="seccion">Datos de la sección 3</div>
+            <table class="datostrabajo3 tabla">
+                <tbody>
+                    <tr>
+                        <td>fecha: <span id="fecha3"></span></td>
+                        <td>Equipo: <span id="Equipo3"></span></td>
+                        <td>Sección: <span id="seccion3"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Observación: <span id="observacion3"></span></td>
+                        <td><img src="" alt="imagen.jpg" id="imagen3"></td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../../js/sb-admin-2.min.js"></script>
+    <script src="../js/funcionalidades/generarpdf.js"></script>
+
+</body>
+
+</html>
