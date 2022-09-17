@@ -40,11 +40,11 @@ app.use((req, res, next) => {
 
 //conexion con mysql
 const datosConexion = {
-	host: 'localhost',
-	user: 'root',
-	password: '',
+	host: 'us-cdbr-east-06.cleardb.net',
+	user: 'b61e6ed9b23636',
+	password: 'c51c62bf',
 	port: 3306,
-	database: 'aplico'
+	database: 'heroku_48478679a424b99'
 }
 app.use(myConnection(mysql, datosConexion, 'single'))
 
