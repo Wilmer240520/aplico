@@ -7,7 +7,7 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const multer =  require('multer')
 const storage = multer.diskStorage({
-	destination: path.join(__dirname, 'publico/imagenes'),
+	destination: path.join(__dirname, '/publico/imagenes'),
 	filename: (req, file, cb) =>  {
 		cb(null, file.originalname)
 	}
@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
 
 //establecemos variables
 app.set('port', process.env.PORT || 3000)
-app.set('views',  path.join(__dirname, 'vistas'))
+app.set('views',  path.join(__dirname, '/vistas'))
 app.set('view engine', 'ejs')
 
 //inicializamos el servidor express
@@ -52,12 +52,12 @@ app.use(myConnection(mysql, datosConexion, 'single'))
 app.use(morgan('dev'))
 
 //configuracion de los archivos estaticos
-app.use(express.static(path.join(__dirname, 'publico')))
+app.use(express.static(path.join(__dirname, '/publico')))
 
 //middleware para imagenes con Multer
 app.use(multer({
 	storage: storage,
-	dest: path.join(__dirname, 'publico/imagenes')
+	dest: path.join(__dirname, '/publico/imagenes')
 }).single('imagen'))
 
 app.get('', (req, res) => {
